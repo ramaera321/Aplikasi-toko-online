@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 py-2 px-2" v-for="t in transaksi" :key="t.id">
                 <div class="card w-100">
-                    <img :src="imageBaseUrl + t.produk.path" class="card-img-top" alt="...">
+                    <img :src="imageBaseUrl + t.produk.path" class="card-img-top" onerror="javascript:this.src='http://localhost:8000/image/default-image.png'" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ t.produk.nama_produk }}</h5>
                         <p class="card-text">{{ subString(t.produk.deskripsi) }}</p>

@@ -85,7 +85,7 @@ export default {
                             localStorage.removeItem("token");
                             localStorage.removeItem("user");
                             
-                            router.go({path: '/login'});
+                            router.push({path: '/login'});
                         })
                     } else {
                         Swal.fire({

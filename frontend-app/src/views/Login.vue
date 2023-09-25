@@ -78,9 +78,9 @@ export default {
                             router.push({path: route.query.returnUrl})
                         } else {
                             if(response.data.user.roles[0].name === 'admin'){
-                                router.go({path: '/dashboard'})
+                                router.push({path: '/dashboard'})
                             } else {
-                                router.go({path: '/'})
+                                router.push({path: '/'})
                             }
                         }
 
